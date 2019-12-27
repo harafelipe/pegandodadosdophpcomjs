@@ -1,2 +1,1 @@
-# pegandodadosdophpcomjs
-Pegando dados do PHP  com Ajax utilizando Jquery.js
+# Pegando dados do PHP  com Ajax utilizando Jquery.js
