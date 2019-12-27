@@ -26,6 +26,15 @@ INSTAGRAM: @tidazueira
 	<div id="app">
 		<ul id="lista"></ul>
 	</div>
+
+	<!-- FORMULÁRIO PARA ENVIO DE DADOS -->
+	<form method="POST" accept-charset="UTF-8">
+		<label for="nome">Nos diga o seu nome?</label>
+		<input type="text" name="nome" id="nome" />
+		<button type="submit">Enviar</button>
+	</form>
+
+	<h1></h1>
 	
 </body>
 </html>
