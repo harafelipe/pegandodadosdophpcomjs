@@ -29,3 +29,22 @@ $.ajax({
     }
 
 });
+
+//REALIZANDO O ENVIO DO FORMULÁRIO
+$(document).on('submit', 'form', function(e) {
+    e.preventDefault();
+
+    //OBTENDO VALOR DO INPUT
+    let nome = $("#nome").val();
+
+    $.ajax({
+        url: URL_PROJETO + 'dados_form.php', //URL DE DESTINO
+        type: 'POST', //TIPO DE REQUISIÇÃO
+        dataType: 'json', //TIPO DE RETORNO
+        data: {nome:nome}, //DADOS A SEREM ENVIADOS NA REQUISIÇÃO
+        success: function(json) {
+            $('h1').text(json.mensagem); //ATRIBUINDO O RETORNO A TAG H1
+        }
+    });
+
+});
